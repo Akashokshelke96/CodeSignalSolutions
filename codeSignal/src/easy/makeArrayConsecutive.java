@@ -14,12 +14,12 @@ public class makeArrayConsecutive {
         int count = 0;
         int min = Integer.MAX_VALUE;
         int max = Integer.MIN_VALUE;
-        for(int i = 0; i < statues.length ; i++ ){
-            if(statues[i] > max){
-                max = statues[i];
+        for (int statue : statues) {
+            if (statue > max) {
+                max = statue;
             }
-            if(statues[i] < min){
-                min = statues[i];
+            if (statue < min) {
+                min = statue;
             }
         }
         count = max - min;
