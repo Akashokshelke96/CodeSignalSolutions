@@ -1,0 +1,21 @@
+public class matrixElementSum {
+    public static void main(String[] args) {
+      
+    matrix = [[0, 1, 1, 2], 
+          [0, 5, 0, 0], 
+          [2, 0, 3, 3]]
+        System.out.println(solution(matrix));
+    }
+
+
+int solution(int[][] matrix) {
+    int s = 0;
+    for (int c = 0; c < matrix[0].length; ++c) 
+        for (int r = 0; r < matrix.length; ++r) {
+            if (matrix[r][c] > 0) 
+                s+=matrix[r][c];
+            else break;
+        }
+    return s;
+}
+}
